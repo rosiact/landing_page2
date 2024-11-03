@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #e49021;
+    opacity: 0.8;
+    z-index: 999;
+}
+.agencia {
+    background-image: url(img/agenc1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 500px;
+}
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+li {
+    width: 50%;
+    display: inline;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;  
+    margin-right: 3%;  
+}
+li > a {
+    text-decoration: none;
+    color: inherit;
+}   
+li:hover {
+    font-size: 22px;
+    color: #3b5bb1fb;
+    text-shadow: 1px 1px 2px #000;
+}
+.logo img {
+    width: 32%;
+    border-radius: 0 20px 20px 0;
+}
+img:hover {
+    box-shadow: 0 0 0 transparent;
+}
+.foto img {
+    width: 30%;
+}
+.main {
+    padding-bottom: 5%;
+}
+
+.default {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+.default h1, h2 { 
+    letter-spacing: 4px;
+    padding: 10px;
+}
+.default p {
+    font-size: 18px;
+}
+.content {
+    width: 80%;
+    margin: 0 auto; 
+}   
+ /* QUEM SOMOS */
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dashed;
+    border-width: 2px 4px;
+    border-radius: 40px;
+}
+.left {
+    width: 40%;
+    height: 400px;
+    background-image: url(img/sal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 35px 10px 10px 35px;
+}
+.right {
+    width: 60%;
+    text-align: justify;
+    padding: 20px; 
+}
+/* CONTATO */
+.contato > .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map {
+    width: 50%;
+    padding-bottom: 5%;
+
+}
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.form form {
+    width: 80%;
+    padding: 5% 10%;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #000;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    
+}
+.form-group label {
+    text-align: left;
+}
+.form-group input, textarea {
+    padding: 8px;
+    border: 1px solid hsl(221, 100%, 49%);
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    border: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: hsl(221, 100%, 49%);
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #0400fc;
+
+}
+/* FOOTER*/
+footer {
+    height: 25vh;
+    background-color: #000000ad;
+    color: #fff;
+    
+}
+footer > .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer1 {
+    width: 40%;
+}
+.footer1 h3 {
+    padding: 15px 5px;
+    width: 100%;
+}
+.footer1 img {
+    padding: 20px 5px;
+    width: 9%;
+}
+#div-fixa {
+    position: fixed;
+    bottom: 20px;
+    margin: 0 20px;
+    background: #0fdf43;
+    width: 230px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.flex-itens img {
+    border-radius: 50%;
+}
+#div-fixa img {
+    width: 50px;
+    height: 50px;
+}
+#div-fixa a .flex-itens {
+    display: flex;
+    align-items: center;
+}
+#div-fixa a .flex-itens span {
+    display: block;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    color: #040305;
+    margin-left: 5px;
+    font-size: 18px;
+}
+.flutuar {
+    animation-name: flutuar;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+} 
+@keyframes flutuar {
+    from {
+        transform: translate3d(0, 0, 0);
+        filter: brightness(100%);
+    }
+    to {
+        transform: translate3d(0, -15px, 0);
+        filter: brightness(150%);
+    }
+}
+.footer1 span {
+    position: relative;
+    bottom: 32px;
+    padding-right: 20px;
+}
+.footer2 {
+    width: 30%;
+}
+.footer2 p {
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+}
+.footer3 {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer3 img {
+    width: 20%;
+}
+    
